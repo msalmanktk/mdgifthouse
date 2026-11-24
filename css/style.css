@@ -257,7 +257,7 @@ button {
       rgba(28, 23, 17, 0.2) 58%,
       rgba(28, 23, 17, 0.05)
     ),
-    url("/assets/images/Golden%20Honey%20and%20Amber%20Perfume%20Still%20Life.png");
+    url("assets/images/Golden%20Honey%20and%20Amber%20Perfume%20Still%20Life.png");
 
   background-position: center;
   background-size: cover;
