@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f5ee" />
+    <title>Order Enquiry | M&amp;D Gift House</title>
+    <meta
+      name="description"
+      content="Discover thoughtful gifts, honey, fragrances and gift hampers from M&D Gift House."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">M&amp;D</span
+          ><span class="brand-name"
+            >M&amp;D<span class="brand-sub">Gift House</span></span
+          ></a
+        >
+        <nav class="nav-links" data-nav>
+          <a href="index.html">Home</a><a href="shop.html">Shop</a
+          ><a href="gallery.html">Gallery</a><a href="story.html">Our Story</a
+          ><a href="giving-back.html">Giving Back</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            data-theme-toggle
+            aria-label="Toggle theme"
+          >
+            ☾</button
+          ><a class="btn btn--gold" href="order.html"
+            >Order Now <span>↗</span></a
+          ><button
+            class="menu-toggle"
+            data-menu-toggle
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">A thoughtful choice</span>
+          <h1>Make an order enquiry.</h1>
+          <p class="lead">
+            Select your honey or fragrance, choose quantity and share delivery
+            details. We’ll prepare a WhatsApp message for M&amp;D to confirm
+            your order.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container form-layout">
+          <aside class="info-card">
+            <span class="eyebrow">Simple &amp; personal</span>
+            <h2 class="heading">Your order, your way.</h2>
+            <p class="muted">
+              Choose from the available starter products. Your selection and
+              estimated total will be added to a prepared WhatsApp message.
+            </p>
+            <div class="order-summary" data-order-summary>
+              Choose a product to see its price.
+            </div>
+            <p class="form-note">
+              Prices shown are sample values until M&amp;D confirms the final
+              product catalogue. Delivery charges, availability and final total
+              will be confirmed by the team.
+            </p>
+          </aside>
+          <form class="form-card" data-order-form>
+            <div class="form-grid">
+              <div class="field full">
+                <label for="product">Choose product *</label
+                ><select id="product" name="product" required>
+                  <option value="">Select honey or fragrance</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="quantity">Quantity *</label
+                ><input
+                  id="quantity"
+                  name="quantity"
+                  type="number"
+                  min="1"
+                  value="1"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label>Unit price</label>
+                <div class="notice" data-product-price>Select a product</div>
+              </div>
+              <div class="field">
+                <label for="name">Your name *</label
+                ><input
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Full name"
+                />
+              </div>
+              <div class="field">
+                <label for="phone">Phone / WhatsApp *</label
+                ><input
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="03XX XXXXXXX"
+                />
+              </div>
+              <div class="field">
+                <label for="city">City *</label
+                ><input
+                  id="city"
+                  name="city"
+                  required
+                  placeholder="Your city"
+                />
+              </div>
+              <div class="field">
+                <label for="address">Delivery address</label
+                ><input
+                  id="address"
+                  name="address"
+                  placeholder="Street, area, city"
+                />
+              </div>
+              <div class="field full">
+                <label for="notes">Additional notes</label
+                ><textarea
+                  id="notes"
+                  name="notes"
+                  placeholder="Gift message, preferred delivery time, or any special request"
+                ></textarea>
+              </div>
+              <div class="field full">
+                <button class="btn btn--gold" type="submit">
+                  Prepare WhatsApp order ↗
+                </button>
+                <p class="form-note">
+                  This is an enquiry flow, not a live payment checkout. Your
+                  message will open in WhatsApp once M&amp;D's number is
+                  configured.
+                </p>
+                <textarea
+                  data-message-preview
+                  hidden
+                  aria-label="Prepared WhatsApp message"
+                  readonly
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><span class="brand-mark">M&amp;D</span
+              ><span class="brand-name"
+                >M&amp;D<span class="brand-sub">Gift House</span></span
+              ></a
+            >
+            <p class="muted" style="max-width: 280px; margin-top: 18px">
+              Thoughtful gifts, beautiful fragrances and moments made
+              meaningful.
+            </p>
+            <a class="btn btn--outline" href="gallery.html"
+              >Explore our gallery ↗</a
+            >
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <div class="footer-links">
+              <a href="shop.html">Shop all</a
+              ><a href="shop.html#honey">M&amp;D Honey</a
+              ><a href="shop.html#fragrance">M&amp;D Fragrance</a
+              ><a href="shop.html#gifts">Customized gifts</a>
+            </div>
+          </div>
+          <div>
+            <h4>About M&amp;D</h4>
+            <div class="footer-links">
+              <a href="story.html">Our story</a
+              ><a href="giving-back.html">Giving back</a
+              ><a href="gallery.html">Gallery</a
+              ><a href="contact.html">Contact us</a>
+            </div>
+          </div>
+          <div>
+            <h4>Need help?</h4>
+            <div class="footer-links">
+              <a href="contact.html">Customer support</a
+              ><a href="info.html#faq">FAQs</a
+              ><a href="info.html#policies">Policies</a
+              ><span>Contact details to be added</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span data-year></span> M&amp;D Gift House. All rights
+            reserved.</span
+          ><span>Made with care, shared with love. ♡</span>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="whatsapp-float"
+      data-whatsapp
+      href="#"
+      aria-label="Chat on WhatsApp"
+      title="Chat on WhatsApp"
+      >◉</a
+    >
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
