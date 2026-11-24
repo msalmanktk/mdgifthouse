@@ -234,7 +234,7 @@ button {
       rgba(28, 23, 17, 0.36) 58%,
       rgba(28, 23, 17, 0.12)
     ),
-    url("assets/images/hero.png") center/cover;
+    url("../assets/images/hero.png") center/cover;
   /* background: url(../assets/images/Golden\ Honey\ and\ Amber\ Perfume\ Still\ Life.png); */
 }
 .page-hero {
@@ -245,7 +245,7 @@ button {
       rgba(28, 23, 17, 0.36) 58%,
       rgba(28, 23, 17, 0.12)
     ),
-    url("./assets/images/hero.png") center/cover;
+    url("../assets/images/hero.png") center/cover;
 }
 /* .page-hero {
   min-height: 550px;
