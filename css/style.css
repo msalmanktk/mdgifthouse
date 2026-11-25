@@ -1205,8 +1205,7 @@ html[data-theme="dark"] {
   background: linear-gradient(
     90deg,
     rgba(250, 242, 225, 0.97) 0%,
-    rgba(250, 242, 225, 0.88) 32%,
-    rgba(250, 242, 225, 0.25) 64%,
+    /* rgba(250, 242, 225, 0.88) 32%, */ rgba(250, 242, 225, 0.25) 64%,
     rgba(42, 31, 18, 0.02) 100%
   );
 }
@@ -1857,8 +1856,7 @@ html[data-theme="dark"] {
   .hero-shade {
     background: linear-gradient(
       90deg,
-      rgba(250, 242, 225, 0.96),
-      rgba(250, 242, 225, 0.78) 57%,
+      /* rgba(250, 242, 225, 0.56), */ rgba(250, 242, 225, 0.78) 57%,
       rgba(250, 242, 225, 0.18)
     );
   }
