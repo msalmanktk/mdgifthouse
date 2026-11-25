@@ -47,7 +47,9 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #101210;
+  background: rgba(20, 18, 14, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(7px);
 
   background-image:
     linear-gradient(rgba(10, 12, 11, 0.45), rgba(10, 12, 11, 0.55)),
