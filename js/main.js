@@ -42,7 +42,7 @@
   const cfg = window.MD_CONFIG || {};
   const root = document.documentElement;
   const saved = localStorage.getItem("md-theme");
-  root.dataset.theme = saved || "light";
+  root.dataset.theme = saved || "dark";
   const toggle = $("[data-theme-toggle]");
   if (toggle)
     toggle.addEventListener("click", () => {
@@ -58,6 +58,7 @@
       nav.classList.toggle("open");
       menu.setAttribute("aria-expanded", nav.classList.contains("open"));
     });
+
   $$("[data-year]").forEach((x) => (x.textContent = new Date().getFullYear()));
   const reveal = $$(".reveal");
   if ("IntersectionObserver" in window) {
