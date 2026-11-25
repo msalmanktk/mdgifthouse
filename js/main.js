@@ -1,19 +1,41 @@
 (() => {
   // erclome message
 
+  //   const welcomeScreen = document.getElementById("welcome-screen");
+
+  //   const welcomeStartTime = Date.now();
+
+  //   window.addEventListener("load", () => {
+  //     const elapsed = Date.now() - welcomeStartTime;
+  //     const remainingTime = Math.max(0, 3000 - elapsed);
+
+  //     setTimeout(() => {
+  //       welcomeScreen.classList.add("hide");
+  //     }, remainingTime);
+  //   });
+
+  //   const welcomeScreen = document.getElementById("welcome-screen");
+
+  //   setTimeout(() => {
+  //     welcomeScreen.classList.add("hide");
+  //   }, 3000);
+
   const welcomeScreen = document.getElementById("welcome-screen");
 
-  const welcomeStartTime = Date.now();
+  const skipWelcome = sessionStorage.getItem("mdSkipWelcomeOnce") === "true";
 
-  window.addEventListener("load", () => {
-    const elapsed = Date.now() - welcomeStartTime;
-    const remainingTime = Math.max(0, 3000 - elapsed);
+  // Flag ko sirf ek baar use karo
+  sessionStorage.removeItem("mdSkipWelcomeOnce");
 
-    setTimeout(() => {
+  if (welcomeScreen) {
+    if (skipWelcome) {
       welcomeScreen.classList.add("hide");
-    }, remainingTime);
-  });
-
+    } else {
+      setTimeout(() => {
+        welcomeScreen.classList.add("hide");
+      }, 3000);
+    }
+  }
   // welcome messaeg
   const $ = (s, r = document) => r.querySelector(s),
     $$ = (s, r = document) => [...r.querySelectorAll(s)];
